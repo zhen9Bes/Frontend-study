@@ -27,16 +27,19 @@ html {
 }
 
 @font-face {
-  font-family: "balqis";
-  src: url("../fonts/balqis.woff2") format("woff2") url("../fonts/balqis.woff")
+  font-family: "Balqis";
+  src: url("../fonts/Balqis.ttf") format("truetype");
+  src: url("../fonts/Balqis.woff2") format("woff2") url("../fonts/Balqis.woff")
     format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap; /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+  /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+  font-display: swap;
 }
 
 @font-face {
   font-family: "RobotoCondensed-Light";
+  src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype");
   src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2")
     url("../fonts/RobotoCondensed-Light.woff") format("woff");
   font-weight: 300;
@@ -46,6 +49,7 @@ html {
 
 @font-face {
   font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype");
   src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2")
     url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
   font-weight: 300;
@@ -55,6 +59,7 @@ html {
 
 @font-face {
   font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2")
     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-weight: 400;
@@ -81,7 +86,7 @@ body {
 }
 
 .header {
-  background-image: url(../img/header-bg.jpg);
+  background-image: url("../img/header-bg.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,20 +97,54 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 72px;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .menu__list-item {
   display: inline-block;
   /*margin-right: 52px; Можно написать здесь отступ, однако после последнего будет тоже бесполезный отступ */
 }
-/* Поэтому можно написать так, тогда после последнего отступа не будет */
+/* Поэтому можно написать так, 
+тогда после последнего отступа не будет 
+*/
 .menu__list-item + .menu__list-item {
   margin-left: 52px;
 }
 
-.menu__list-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+.menu__list-link:hover {
+  text-decoration: underline;
 }
+
+.header__phone {
+  padding-left: 40px;
+  position: relative;
+}
+.header__phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/phone.svg");
+  width: 30px;
+  height: 30px;
+  left: 0;
+}
+
+.header__title {
+  font-family: "Balqis";
+  padding-top: 152px;
+  text-align: center;
+  font-size: 250px;
+  line-height: 334px;
+  font-weight: 200;
+}
+.header__title span {
+  display: block;
+  text-align: right;
+  font-size: 56px;
+  line-height: 66px;
+  font-family: "RobotoCondensed-LightItalic";
+  margin-top: -66px;
+  margin-right: 85px;
+}
+
