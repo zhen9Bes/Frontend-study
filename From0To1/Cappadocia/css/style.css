@@ -262,5 +262,25 @@ body {
   font-size: 24px;
   line-height: 28px;
   padding: 11px 54px;
-  border: 1px solid #E2AB3F;
+  border: 1px solid #e2ab3f;
+}
+
+.hotel__inner {
+  display: flex;
+}
+.hotel__inner-img {
+  margin-right: 100px;
+}
+.hotel__content-text {
+  margin-bottom: 20px;
+}
+.hotel__gallery {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel__gallery a {
+    margin-top: 50px;
 }
