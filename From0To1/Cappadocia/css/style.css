@@ -1,0 +1,111 @@
+/* Это современный вид записи. Лучше использовать его
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+*/
+
+/* Но можно и так. Вроже как он менее лаконичный и логичный.
+   Однако на практике особой разници не заметно
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+} */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "balqis";
+  src: url("../fonts/balqis.woff2") format("woff2") url("../fonts/balqis.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2")
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+}
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2")
+    url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2")
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Позволяет сначала отобразить текста системными шрифтами. А уже потом догружает нужные шрифты*/
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: #000;
+  font-family: "RobotoCondensed-Light", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-image: url(../img/header-bg.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+
+.menu__list-item {
+  display: inline-block;
+  /*margin-right: 52px; Можно написать здесь отступ, однако после последнего будет тоже бесполезный отступ */
+}
+/* Поэтому можно написать так, тогда после последнего отступа не будет */
+.menu__list-item + .menu__list-item {
+  margin-left: 52px;
+}
+
+.menu__list-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
