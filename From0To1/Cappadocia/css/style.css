@@ -26,6 +26,10 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 @font-face {
   font-family: "Balqis";
   src: url("../fonts/Balqis.ttf") format("truetype");
@@ -86,7 +90,23 @@ body {
 }
 
 .page-section {
-  margin: 200px 0; /*Схлопывание марджинов*/
+  margin: 200px auto; /*Схлопывание марджинов*/
+  max-width: 1920px;
+}
+
+.section-container {
+  position: relative;
+}
+
+.section-container__content {
+  position: absolute;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .title {
@@ -174,21 +194,73 @@ body {
 }
 
 .fairy-tail__slider {
-    width: 50%;    
+  width: 50%;
 }
 .slick-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .slick-prew {
-    left: 0;
+  left: 0;
 }
 .slick-next {
-    right: 0;
+  right: 0;
 }
 
+.fairy-tail__content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  padding-left: 55px;
+}
+
+.fairy-tail__content-title {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 18px;
+  line-height: 21px;
+}
+.fairy-tail__text {
+  padding: 10px 0;
+}
+
+.our-trip__slider {
+  width: 50%;
+  margin-left: auto;
+}
+
+.our-trip__title {
+  margin-top: -25px;
+  margin-left: 245px;
+}
+.our-trip__content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  padding-right: 55px;
+}
+.our-trip__list--title {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.our-trip__btn {
+  font-family: "RobotoCondensed-Light";
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 11px 54px;
+  border: 1px solid #E2AB3F;
+}
