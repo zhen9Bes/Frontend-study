@@ -85,6 +85,26 @@ body {
   padding: 0 15px;
 }
 
+.page-section {
+  margin: 200px 0; /*Схлопывание марджинов*/
+}
+
+.title {
+  color: #e2ab3f;
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+}
+
+.title span {
+  display: block;
+  color: #000;
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 100px;
+}
+
 .header {
   background-image: url("../img/header-bg.jpg");
   background-position: bottom center;
@@ -146,5 +166,29 @@ body {
   font-family: "RobotoCondensed-LightItalic";
   margin-top: -66px;
   margin-right: 85px;
+}
+
+.fairy-tail__title {
+  margin-top: -20px;
+  margin-left: 180px;
+}
+
+.fairy-tail__slider {
+    width: 50%;    
+}
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.slick-prew {
+    left: 0;
+}
+.slick-next {
+    right: 0;
 }
 
