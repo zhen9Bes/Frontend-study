@@ -282,5 +282,44 @@ body {
 }
 
 .hotel__gallery a {
-    margin-top: 50px;
+  margin-top: 50px;
+}
+
+.price {
+  background-image: url('../img/balls.png');
+  background-repeat: no-repeat;
+  background-position: center right 20%;
+}
+
+.price__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .price__content{
+  margin-bottom: 40px;
+} */
+
+.price__title {
+  margin-top: -20px;
+  margin-left: 120px;
+}
+
+.price__list-title {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+}
+.price__list {
+  font-size: 18px;
+  line-height: 21px;
+}
+.price__list-item {
+  margin-top: 20px;
+}
+
+.price__included {
+  max-width: 530px;
+  margin-right: 70px;
+  
 }
