@@ -271,6 +271,10 @@ body {
 .hotel__inner-img {
   margin-right: 100px;
 }
+.hotel__title {
+  margin-left: 120px;
+  margin-top: -25px;
+}
 .hotel__content-text {
   margin-bottom: 20px;
 }
@@ -286,7 +290,7 @@ body {
 }
 
 .price {
-  background-image: url('../img/balls.png');
+  background-image: url("../img/balls.png");
   background-repeat: no-repeat;
   background-position: center right 20%;
 }
@@ -295,10 +299,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* .price__content{
-  margin-bottom: 40px;
-} */
 
 .price__title {
   margin-top: -20px;
@@ -321,5 +321,148 @@ body {
 .price__included {
   max-width: 530px;
   margin-right: 70px;
-  
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+.contacts__title span {
+  display: block;
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+.contacts__price-title {
+  margin-left: 105px;
+}
+.contacts__date {
+  margin-left: 200px;
+  margin-top: -25px;
+}
+.contacts__price {
+  margin-left: 195px;
+  margin-top: -20px;
+}
+
+.contacts__form-info {
+  margin-bottom: 100px;
+}
+.contacts__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contacts__form-title {
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+.contacts__form-input {
+  border: 1px solid #e2ab3f;
+  display: block;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  padding: 0 31px;
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__form-btn {
+  border: 1px solid #e2ab3f;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "RobotoCondensed-Light";
+  background: transparent;
+  padding: 11px 45px;
+  cursor: pointer;
+}
+.footer {
+  background-image: url("../img/footer-fone.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-top: 96px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-family: "Balqis";
+  font-size: 86px;
+  line-height: 115px;
+}
+
+.footer__contacts {
+  width: 356px;
+  height: 527px;
+  background-image: url("../img/ball-footer.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.footer__contacts-title {
+  font-family: "Balqis";
+  font-size: 86px;
+  line-height: 115px;
+  color: #e2ab3f;
+  margin-bottom: 50px;
+}
+
+.footer__contacts-phone,
+.footer__contacts-email {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.footer__contacts-phone::before,
+.footer__contacts-email::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -5px;
+}
+.footer__contacts-phone::before {
+  background-image: url("../img/phone-footer.svg");
+}
+.footer__contacts-email::before {
+  background-image: url("../img/mail.svg");
+}
+
+.footer__contacts-phone {
+  margin-bottom: 20px;
+}
+.footer__contacts-email {
+  margin-bottom: 38px;
+}
+.footer__social-link{
+  padding: 0 7px;
+}
+
+@media (max-width: 500px){
+
 }
