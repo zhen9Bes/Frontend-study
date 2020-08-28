@@ -1,0 +1,6 @@
+{
+    "importCost.bundleSizeDecoration": "minified",
+    "editor.tabSize": 3,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true
+}
