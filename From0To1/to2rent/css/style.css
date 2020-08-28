@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::after,
 *::before {
@@ -12,7 +11,6 @@ li {
   list-style: none;
   display: inline-block;
 }
-
 body {
   /* font-family: 'PT Serif', serif; */
   font-family: "Roboto Condensed", sans-serif;
@@ -31,13 +29,31 @@ body {
 .menu {
   border-top: 2px solid #c4c4c4;
 }
-
+.menu__list {
+  display: flex;
+  justify-content: center;
+}
+.menu__list-item {
+  width: 300px;
+}
 .menu__link {
   text-decoration: none;
   color: #888888;
+  display: block;
+  padding: 34px 10px 38px;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  transition: all 0.3s linear;
 }
-.menu__link--active {
-  text-decoration: none;
-  background-color: #000;
+.menu__link--active,
+.menu__link:hover {
+  background-color: #000000;
   color: #ffffff;
+}
+
+.menu__list-item:first-child {
+  border-left: 1px solid #c4c4c4;
+}
+.menu__list-item:last-child {
+  border-right: 1px solid #c4c4c4;
 }
